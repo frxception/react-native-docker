@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  rn:
+    build: .
+    container_name: react-native
+    ports:
+      - '8081:8081'
+      - '5037:5037'
+    network_mode: 'host'
+    volumes:
+      - .:/usr/src/rn
